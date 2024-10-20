@@ -38,6 +38,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         self.adjusted_time = None
         self.buttons = []
+        self.labels = []
         self.window_setting()
         self.init_widget()
         self.init_timer()
@@ -57,7 +58,6 @@ class MainWindow(QMainWindow):
     def init_button(self):
         self.create_button()
         self.set_button_location()
-        self.labels = []
         self.set_button_text()
         self.set_button_font()
         self.bind_button_clicked()
