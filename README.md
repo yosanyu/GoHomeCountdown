@@ -22,10 +22,10 @@ A notification will be sent as long as Windows notifications are not disabled.
 Use the winreg package to set the program to start automatically when the computer boots up.
 
 ## What if I want to automate the clocking out process?
-You can modify the contents of the go_home_check_in function according to your needs.  
+You can modify the contents of the go_home_clock_in function according to your needs.  
 
 ## How do I change the clock-in hours?
-Modify the value of _HOURS. If you need to include minutes, you will also need to modify any references to _HOURS.
+Modify the value of _HOURS. If you need to use minutes, you will also need to modify any references to _HOURS.
 
 # Display:
 ![](example1.PNG)
