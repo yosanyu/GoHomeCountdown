@@ -31,5 +31,5 @@ Modify the value of _HOURS. If you need to include minutes, you will also need t
 ![](example1.PNG)
 ![](example2.PNG)
 ![](example3.PNG)  
-![](example4.PNG)
+![](example4.png)
 ![](example5.PNG)
