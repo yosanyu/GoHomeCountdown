@@ -13,7 +13,7 @@ Refer to the requirements.txt.
 
 ## How will I be notified to clock out?
 The go_home_clock_in function will automatically open a webpage (you can modify the _URL content if your company’s clock-in system is web-based).  
-The taskbar will flash if the window is not in the foreground.
+The taskbar will flash if the window is not in the foreground.  
 A notification will be sent as long as Windows notifications are not disabled.  
 
 
