@@ -1,29 +1,35 @@
 # GoHomeCountdown
-## 這是什麼?
-這是用來倒數離下班還有多久時間，若下班時間到了會提醒該要打卡了
+## What is this?
+This is used to count down how much time is left until the end of the workday. If the end of the workday is reached, a reminder will notify you to clock out.
+
+## Support Language
+English  
+简体中文  
+繁體中文  
+日本語    
+
+## What packages need to be installed?
+Refer to the requirements.txt.
+
+## How will I be notified to clock out?
+The go_home_clock_in function will automatically open a webpage (you can modify the _URL content if your company’s clock-in system is web-based).  
+The taskbar will flash if the window is not in the foreground.
+A notification will be sent as long as Windows notifications are not disabled.  
 
 
-## 需要安裝哪些套件
-參考 requirements.txt  
+## What can I expand its functionality?
+### Example  
+Use the winreg package to set the program to start automatically when the computer boots up.
 
-## 怎麼通知該打下班卡了?
-1.在go_home_check_in函數裡會自動開啟一個網頁(如果公司打卡系統是用網頁的話可修改_URL內容)  
-2.在視窗沒有在最上層時，工具列會發光  
-3.在windows通知未關閉的情況下會發送一個通知
+## What if I want to automate the clocking out process?
+You can modify the contents of the go_home_check_in function according to your needs.  
 
-## 還能怎麼擴充功能?
-1.使用winreg套件將讓程式開機時自動啟動
+## How do I change the clock-in hours?
+Modify the value of _HOURS. If you need to include minutes, you will also need to modify any references to _HOURS.
 
-## 想自動打卡怎麼辦?
-可根據自身需求修改go_home_check_in函數的內容
-
-## 怎麼修改打卡時數?
-修改_HOURS的值  
-若有分鐘需求則需修改引用到_HOURS的地方
-
-# 展示
+# Display:
 ![](example1.PNG)
 ![](example2.PNG)
-![](example3.PNG)
-![](example4.png)  
+![](example3.PNG)  
+![](example4.PNG)
 ![](example5.PNG)
