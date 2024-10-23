@@ -33,3 +33,6 @@ Modify the value of _HOURS. If you need to use minutes, you will also need to mo
 ![](example3.PNG)  
 ![](example4.png)
 ![](example5.PNG)
+
+# Flow:
+![](flow/flow.png)
