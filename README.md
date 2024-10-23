@@ -1,33 +1,38 @@
 # GoHomeCountdown
-## What is this?
-This is used to count down how much time is left until the end of the workday. If the end of the workday is reached, a reminder will notify you to clock out.
+## Overview
+This application counts down the remaining time until the end of the workday.  
+When the workday concludes, a reminder will notify you to clock out.
 
-## Support Language
-English  
-简体中文  
-繁體中文  
-日本語    
+## Supported Languages
+### English  
+### 简体中文  
+### 繁體中文  
+### 日本語    
 
-## What packages need to be installed?
-Refer to the requirements.txt.
+## Required Packages
+Please refer to the `requirements.txt` file for the list of packages to be installed.
 
-## How will I be notified to clock out?
-The go_home_clock_in function will automatically open a webpage (you can modify the _URL content if your company’s clock-in system is web-based).  
-The taskbar will flash if the window is not in the foreground.  
-A notification will be sent as long as Windows notifications are not disabled.  
+## Notification Mechanism
+1. The `go_home_clock_in` function will: Automatically open a webpage (you can modify the `_URL` variable if your company’s clock-in system is web-based).  
+2. Flash the taskbar if the window is not in the foreground.  
+3. Send a notification, provided that Windows notifications are enabled.   
 
+## Expanding Functionality
+### Suggestions for Additional Features  
+1. You can use the `winreg` package to set the program to start automatically when the computer boots up.  
+2. Automatically shut down your computer when receiving a notification.
+3. Add support for additional languages. 
 
-## What can I expand its functionality?
-### Example  
-Use the winreg package to set the program to start automatically when the computer boots up.
+## Automating the Clocking Out Process
+You can modify the contents of the `go_home_clock_in` function to suit your specific needs or customize it based on your ideas.  
 
-## What if I want to automate the clocking out process?
-You can modify the contents of the go_home_clock_in function according to your needs.  
-
-## How do I change the clock-in hours?
-Modify the value of _HOURS. If you need to use minutes, you will also need to modify any references to _HOURS.
+## Changing Clock-In Hours
+To change the clock-in hours, modify the value of `_HOURS`.  
+If you need to include minutes, ensure you also update any references to `_HOURS` accordingly.    
 
 # Display:
+The following images illustrate several situations of the application:  
+  
 ![](example1.PNG)
 ![](example2.PNG)
 ![](example3.PNG)  
@@ -35,4 +40,6 @@ Modify the value of _HOURS. If you need to use minutes, you will also need to mo
 ![](example5.PNG)
 
 # Flow:
+The flow diagram below shows the overall process: 
+  
 ![](flow/flow.png)
